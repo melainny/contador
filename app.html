@@ -19,8 +19,23 @@
   }
 </style>
 <h1>Contador</h1>
-<p>0</p>
+<p id="number">0</p>
 <div>
-  <button>menos</button>
-  <button>mais</button>
+  <button onclick="subtrair()">menos</button>
+  <button onclick="somar()">mais</button>
 </div>
+<script>
+
+  const p = document.getElementById("number")
+
+  function somar() {
+    var num = parseInt(p.innerText) // pega o número
+    num = num + 1 // soma mais 1
+    p.innerText = num // atualiza o número
+  }
+  function subtrair() {
+    var num = parseInt(p.innerText) // pega o número
+    num = num - 1 // subtrai 1
+    p.innerText = num // atualiza o número
+  }
+</script>
