@@ -26,6 +26,7 @@
 </div>
 <script>
 
+  // pega uma referência para o <p> onde está o número
   const p = document.getElementById("number")
 
   function somar() {
@@ -33,6 +34,7 @@
     num = num + 1 // soma mais 1
     p.innerText = num // atualiza o número
   }
+
   function subtrair() {
     var num = parseInt(p.innerText) // pega o número
     num = num - 1 // subtrai 1
